@@ -13,33 +13,33 @@
         event.target.style.backgroundColor = "#f00"
     }
 
-    // let redBtn = document.querySelector(".red")
-    // redBtn.addEventListener("click", redFunction)
+    let redBtn = document.querySelector(".red")
+    redBtn.addEventListener("click", redFunction)
     let myBodyElement = document.querySelector("body")
 
-    // function redFunction(){
-    //     myBodyElement.setAttribute("class", "redBack")
+    function redFunction(){
+        myBodyElement.setAttribute("class", "redBack")
 
-    // }
-    // let blueBtn = document.querySelector(".blue")
-    // blueBtn.addEventListener("click", blueFunction)
+    }
+    let blueBtn = document.querySelector(".blue")
+    blueBtn.addEventListener("click", blueFunction)
 
-    // function blueFunction(){
-    //     myBodyElement.setAttribute("class", "blueBack")
+    function blueFunction(){
+        myBodyElement.setAttribute("class", "blueBack")
 
-    // }
-    // let greenBtn = document.querySelector(".green")
-    // greenBtn.addEventListener("click", greenFunction)
+    }
+    let greenBtn = document.querySelector(".green")
+    greenBtn.addEventListener("click", greenFunction)
 
-    // function greenFunction(){
-    //     myBodyElement.setAttribute("class", "greenBack")
+    function greenFunction(){
+        myBodyElement.setAttribute("class", "greenBack")
 
-    // }
-    // let defualtBtn = document.querySelector(".reset")
-    // defualtBtn.addEventListener("click", defualtFunction)
+    }
+    let defualtBtn = document.querySelector(".reset")
+    defualtBtn.addEventListener("click", defualtFunction)
 
-    // function defualtFunction(){
-    //     myBodyElement.removeAttribute("class")
+    function defualtFunction(){
+        myBodyElement.removeAttribute("class")
 
-    // }
+    }
 })()
