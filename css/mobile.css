@@ -75,6 +75,9 @@ nav ul li a {
 .colPicker:hover {
   cursor: pointer;
 }
+.defualtBack {
+  background-color: #fff;
+}
 .redBack {
   background-color: #be1c26;
 }
