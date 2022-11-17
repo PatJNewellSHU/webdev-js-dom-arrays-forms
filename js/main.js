@@ -1,7 +1,5 @@
 (function(){
     document.getElementById("myHeading").innerHTML = "Pat Newell"
-    document.querySelector("nav ul li").setAttribute("class", "currentPage")
-    let firstLink = document.querySelector("nav ul li a")
     firstLink.setAttribute ("href", "https://google.co.uk")
     // event on button
     let myBttn = document.getElementById("myTestEvent")
@@ -40,6 +38,31 @@
 
     function defualtFunction(){
         myBodyElement.removeAttribute("class")
-
     }
+    let imageAr = ['images/view1.jpg', 'images/view2.jpg', 'images/view3.jpg','images/view4.jpg', 'images/view5.jpg', 'images/view6.jpg'];
+
+    let picBtn = document.querySelector('#myImages')
+
+    setInterval(chgImage, 500)
+    picBtn.addEventListener("click",manualChgImage)
+    let index = 0
+    function chgImage()
+    {
+        if(index == imageAr.length - 1){
+            index = 0
+        }
+        document.getElementById('myImages').setAttribute('src', imageAr[index]);
+        index += 1
+    }
+    function manualChgImage(){
+
+        if(index == imageAr.length - 1){
+            index = 0
+        }
+        else{
+            index += 1
+        }
+        document.getElementById('myImages').setAttribute('src', imageAr[index]);
+    }
+
 })()
