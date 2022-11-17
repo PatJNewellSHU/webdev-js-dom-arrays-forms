@@ -11,12 +11,12 @@
         pricePounds = parseFloat(document.getElementById('pounds').value);
         exchangeRate = 1.14
         priceEuros = 0
-        if(isNaN(pricePounds)){
+        if(isNaN(pricePounds) == false){
             msg.style.display = "block";
             msg.innerHTML = "You must enter a number";
             msg.setAttribute('class', 'error');
         }
-        if(pricePounds === 0){
+        else if(pricePounds === 0){
             msg.style.display = "block";
             msg.innerHTML = "You must enter more than zero."
             msg.setAttribute('class', 'error');
